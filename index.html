@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EmoLab — Pengenalan Ekspresi Wajah</title>
+<title>EmotionApp — Pengenalan Ekspresi Wajah</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script defer src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api/dist/face-api.js"></script>
@@ -134,7 +134,7 @@ footer a{color:var(--surprise);}
     <div class="brand">
       <div class="brand-mark"></div>
       <div>
-        <h1>EmoLab</h1>
+        <h1>EmotionApp</h1>
         <span>PENGENALAN EKSPRESI WAJAH · REAL-TIME</span>
       </div>
     </div>
@@ -422,7 +422,7 @@ document.getElementById('file-input').addEventListener('change', async (e)=>{
 });
 
 // ---- History + Stats (persisted with localStorage) ----
-const HISTORY_KEY = 'emolab_history_v1';
+const HISTORY_KEY = 'EmotionApp_history_v1';
 function getHistory(){ try{ return JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; }catch(e){ return []; } }
 function saveHistory(list){ localStorage.setItem(HISTORY_KEY, JSON.stringify(list)); }
 
